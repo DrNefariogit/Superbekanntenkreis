@@ -1,0 +1,21 @@
+<div class="container-xl">
+  <div class="row projects" id="projects">
+    <div class="col-12">
+      <h2>Projects</h2>
+      <p class="pt-1">Hier könnt ihr unsere super seriösen Gehörnergüsse bestaunen.</p>
+    </div>
+    <div class="col-md-4 mt-3" *ngFor="let project of projects">
+      <a [routerLink]="project.link" style="text-decoration: none;">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img [src]="project.image || defaultImage" alt="{{ project.name }}">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ project.name }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
