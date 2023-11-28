@@ -3,6 +3,7 @@ import { ProjectShowcaseComponent } from './components/landing-page/projects-sho
 import { ProjectGuideComponent } from './components/projects/project-guide/project-guide.component';
 
 export const appRoutes: Routes = [
-  { path: '', component: ProjectShowcaseComponent },
+  { path: 'home', component: ProjectShowcaseComponent },
   { path: 'project/1', component: ProjectGuideComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
