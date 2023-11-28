@@ -1,29 +1,21 @@
-import { Component, AfterViewInit, Renderer2 } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { ProjectShowcaseComponent } from './components/landing-page/projects-showcase/projects-showcase.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NavBarComponent, LandingPageComponent],
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    NavBarComponent,
+    ProjectShowcaseComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent {
   title = 'Superbekanntenkreis';
-  
-  constructor(private renderer: Renderer2) {}
-
-  ngAfterViewInit() {
-    const blob = this.renderer.selectRootElement('#blob');
-
-    window.onpointermove = event => {
-      const { clientX, clientY } = event;
-
-      this.renderer.setStyle(blob, 'left', `${clientX}px`);
-      this.renderer.setStyle(blob, 'top', `${clientY}px`);
-    };
-  }
 }

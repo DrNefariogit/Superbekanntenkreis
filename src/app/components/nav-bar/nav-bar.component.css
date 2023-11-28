@@ -1,16 +1,18 @@
 body {
-  padding-top: 56px; 
-  background-color: #1f2122;
+  padding-top: 56px;
+  background-color: rgba(31, 33, 34, 0.5);
 }
 
 .navbar {
-  background-color: #1f2122;
+  background-color: rgba(31, 33, 34, 0.5);
   backdrop-filter: blur(12vmax);
 }
 
 .navbar-brand {
   font-weight: bold;
   color: #dfced8;
+  padding: 10px;
+  margin: 0;
 }
 
 .navbar-toggler {
@@ -19,7 +21,8 @@ body {
   color: white;
   border: 1.5px solid #27292a;
   border-radius: 7px;
-  filter: invert(72%) sepia(25%) saturate(748%) hue-rotate(314deg) brightness(89%) contrast(88%);
+  filter: invert(72%) sepia(25%) saturate(748%) hue-rotate(314deg)
+    brightness(89%) contrast(88%);
 }
 
 .navbar-nav .nav-link {
@@ -47,13 +50,12 @@ a {
 }
 
 .navbar-nav .active {
-  color: #e75e8d ;
+  color: #e75e8d;
   text-decoration: none;
 }
 
-
 @media (max-width: 991px) {
   body {
-    padding-top: 75px; 
+    padding-top: 75px;
   }
 }

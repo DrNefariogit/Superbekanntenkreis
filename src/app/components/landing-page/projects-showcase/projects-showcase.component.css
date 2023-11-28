@@ -1,0 +1,45 @@
+.container-xl {
+  margin-top: 110px;
+  background-color: #27292a;
+  padding: 60px;
+  border-radius: 23px;
+}
+
+.projects {
+  padding: 30px;
+  background-color: #1f2122;
+  border-radius: 23px;
+}
+
+.project-card {
+  background-color: #27292a;
+  border-radius: 23px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-image-container {
+  height: 180px;
+  border-radius: 23px 23px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-image-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px 15px 30px 15px;
+}
+
+p {
+  color: #dfced8;
+}
