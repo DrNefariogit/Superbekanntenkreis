@@ -31,16 +31,21 @@ export class ProjectShowcaseComponent implements OnInit {
   }
 
   defaultImage: string = 'assets/images/default_project_thumbnail.png';
+
+  // Projects can have custome images just add
+  // image: 'assets/images/[Ur Project Image]';
+  // to the project object
   projects: Project[] = [
     {
       id: 1,
-      name: 'Project One',
-      description: 'This is a test project',
+      name: 'Project Guide',
+      description: 'How to crate a new project.',
     },
     {
       id: 2,
-      name: 'Project Two',
-      description: 'This is a test project',
+      name: 'Fancy Hover Effects',
+      description: 'Trying out some hover effects here, nothing specal',
+      image: 'assets/images/click_dude.jpg',
     },
     {
       id: 3,
