@@ -45,7 +45,6 @@ export class ProjectShowcaseComponent implements OnInit {
       id: 2,
       name: 'Fancy Hover Effects',
       description: 'Trying out some hover effects here, nothing specal',
-      image: 'assets/images/click_dude.jpg',
     },
     {
       id: 3,

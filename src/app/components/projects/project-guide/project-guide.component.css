@@ -1,0 +1,36 @@
+.container {
+  margin-top: 90px;
+  padding: 20px;
+  background-color: #27292a;
+  border-radius: 23px;
+}
+
+.container-sm,
+.container-md,
+.container-lg {
+  margin-top: 110px;
+  padding: 40px 60px;
+}
+
+.section {
+  padding-bottom: 30px;
+}
+
+.input-group {
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border: 2px solid #494f55;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+button {
+  color: #494f55;
+  border: none;
+}
+
+button:hover {
+  color: black;
+  background-color: #494f55;
+}

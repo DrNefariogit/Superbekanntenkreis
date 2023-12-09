@@ -1,3 +1,124 @@
-<div>
-  <p>project-guide works!</p>
+<div
+  class="container container-sm container-md container-lg d-flex justify-content-center"
+>
+  <div class="col-10">
+    <div class="section">
+      <h1 class="pb-3">Projects Guide</h1>
+      <p>
+        Welcome to the Projects Guide, your step-by-step manual for managing
+        components within your Angular application. Follow these instructions to
+        seamlessly create, integrate, and manage your project components.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 class="pb-2">Creating a New Component</h2>
+      <div class="step">
+        <p>
+          <strong>1. Navigate to Components:</strong> In your project directory,
+          go to <code>components -> projects</code>.
+        </p>
+      </div>
+      <div class="step">
+        <p>
+          <strong>2. Open Integrated Terminal:</strong> Right-click and select
+          "Open in Integrated Terminal".
+        </p>
+      </div>
+      <div class="step">
+        <p>
+          <strong>3. Generate Component:</strong> Use the Angular CLI to
+          generate a new component with the command:
+        </p>
+        <div class="input-group">
+          <code class="ps-3">
+            {{ generateComponentCode }}
+          </code>
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            (click)="copyTextToClipboard(generateComponentCode)"
+          >
+            Copy
+          </button>
+        </div>
+        <p>
+          Replace <code>&lt;component-name&gt;</code> with your desired
+          component's name.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="pb-2">Deleting Unnecessary Files</h2>
+      <p>
+        To keep your project clean, you may want to delete test files. Locate
+        any
+        <code>.spec.ts</code> files within your component directory and delete
+        them if they are not needed.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 class="pb-2">Linking Component as a New Project</h2>
+      <div class="step">
+        <p>
+          <strong>1. Create Component Object:</strong> In
+          <code>projects-showcase.component.ts</code>, define a new component
+          object. For example:
+        </p>
+        <div class="input-group">
+          <code class="ps-3">
+            {{ componentObjectCode }}
+          </code>
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            (click)="copyTextToClipboard(componentObjectCode)"
+          >
+            Copy
+          </button>
+        </div>
+      </div>
+      <div class="step">
+        <p>
+          <strong>2. Define a Route:</strong> In the
+          <code>app.routes.ts</code> file, create a sub-route for your project.
+          Ensure that your project link starts with
+          <code>project/</code> followed by the project ID. Here's how you can
+          define a route:
+        </p>
+        <div class="input-group">
+          <code class="ps-3">
+            {{ projectPathCode }}
+          </code>
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            (click)="copyTextToClipboard(projectPathCode)"
+          >
+            Copy
+          </button>
+        </div>
+        <p>
+          Replace <code>[id]</code> with your project's ID and
+          <code>[YourProjectComponent]</code> with the actual component class.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="pb-2">Resolving Component References</h2>
+      <p>
+        If your component name is highlighted in red, the project does not
+        recognize the component. In this case, you need to import it at the top
+        of your file. Refer to the import statements of other components for
+        syntax guidance.
+      </p>
+      <p>
+        Remember, import statements are always placed at the top of a TypeScript
+        file.
+      </p>
+    </div>
+  </div>
 </div>

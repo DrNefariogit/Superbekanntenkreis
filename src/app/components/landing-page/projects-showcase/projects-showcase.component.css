@@ -1,8 +1,15 @@
-.container-xl {
-  margin-top: 110px;
+.container {
+  margin-top: 90px;
+  padding: 20px;
   background-color: #27292a;
-  padding: 60px;
   border-radius: 23px;
+}
+
+.container-sm,
+.container-md,
+.container-lg {
+  margin-top: 110px;
+  padding: 40px 60px;
 }
 
 .projects {
